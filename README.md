@@ -2,7 +2,7 @@
 
 ## About
 
-GraspLoCoMo is a C++ software package used for robotic grasp generation. It allows to generate grasps for parallel jaw-grippers given a 3D point cloud with normals. This implementation is based on the results from the publication [Model-free and learning-free grasping by Local Contact Moment matching](https://core.ac.uk/download/pdf/267309469.pdf). 
+GraspLoCoMo is a C++ software package used for robotic grasp generation. It allows to generate grasps for parallel jaw-grippers given a 3D point cloud with normals. This implementation is based on the results from the publication [Model-free and learning-free grasping by Local Contact Moment matching](https://ieeexplore.ieee.org/document/8594226). 
 
 ![Example grasps image](grasps.png "Sample grasps")
 _**Note:** The visualizer is not included in this release_
