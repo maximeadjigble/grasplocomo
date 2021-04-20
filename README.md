@@ -1,4 +1,4 @@
-# Model-free & Learning-free robotic grasping
+# GraspLoCoMo - Model-free & Learning-free robotic grasping
 
 ## About
 
