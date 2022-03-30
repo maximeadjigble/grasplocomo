@@ -36,7 +36,7 @@ and the following mandatory libraries
 * [Eigen](http://eigen.tuxfamily.org/)
 * [Nanoflann](https://github.com/jlblancoc/nanoflann)
 
-**Note** Eigen and Nanoflann are headers-only libraries and can be easily integrated using CMake. Please, download the requirements from each link and follow the instructions below the compile the code.
+**Note** Eigen and Nanoflann are headers-only libraries and can be easily integrated using CMake. Both are added as git submodules in the ThirdParty folder.
 
 **Windows:** 
 Install Visual Studio and CMake. Clone/Download Eigen and Nanoflann in the **_ThirdParty_** folder. 
@@ -59,7 +59,7 @@ Open the solution using Visual Studio and set the **TestdxGraspLoCoMo** as Start
 
 **_Note (Release mode):_** By default the project will be in Debug mode. For some reason the execution of the code is much slower in this mode, set the poject to Release to get better performances. This will be fixed in future!!
 
-**_Note for Linux:_** The code has not been tested on Linux, but should work with minor changes. The above procedure still applies.
+**_Note for Linux:_** The code has been tested with Ubuntu 20.04.4 and cmake (without Visual Studio).
 
 ### Folder Structure
 - Grasp: LoCoMo Grasping code
