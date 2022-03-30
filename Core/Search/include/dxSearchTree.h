@@ -46,6 +46,7 @@
 #include <nanoflann.hpp>
 #include "dxPointCloud.h"
 #include "Eigen/Dense"
+#include <memory>
 
 class dxSearchTree
 {
