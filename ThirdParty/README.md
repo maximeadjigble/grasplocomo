@@ -1,1 +1,1 @@
-Download or clone Eigen and nanoflann here.
+Eigen and nanoflann as git submodules.

@@ -4,9 +4,14 @@ FILE(GLOB_RECURSE INCLUDE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h"
 								"${CMAKE_CURRENT_SOURCE_DIR}/include/*.hpp"
 								"${CMAKE_SOURCE_DIR}/Core/Math/include/dxPoint3.h"
 								"${CMAKE_SOURCE_DIR}/Core/Search/include/*.h")
+
+# Posix threads
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
  
 #Generate Library
 ADD_LIBRARY(dxGraspLoCoMo ${SOURCES_FILES} ${INCLUDE_FILES} )
+target_link_libraries(dxGraspLoCoMo PUBLIC Threads::Threads)
 INCLUDE_DIRECTORIES(dxGraspLoCoMo PUBLIC 	${CMAKE_CURRENT_SOURCE_DIR}/include
 									${NANO_FLANN_INCLUDE}
 									${EIGEN3_INCLUDE}
