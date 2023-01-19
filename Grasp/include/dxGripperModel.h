@@ -809,10 +809,10 @@ public:
 
         bool inCollision()
         {
-            if (bboxGripper.M(2, 3) <= collisionZmin)
-            {
-                return true;
-            }
+            //if (bboxGripper.M(2, 3) <= collisionZmin)
+            //{
+            //    return true;
+            //}
 
             if (bboxGripper.inCollision(collisionMaxRatio))
             {
